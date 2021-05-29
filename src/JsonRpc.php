@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpCatCom;
+namespace php_cat_com;
 
 // use GuzzleHttp\Cookie\CookieJar;
 // use GuzzleHttp\Exception\GuzzleException;
