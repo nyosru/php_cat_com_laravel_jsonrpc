@@ -2,15 +2,6 @@
 
 namespace php_cat_com;
 
-// use GuzzleHttp\Cookie\CookieJar;
-// use GuzzleHttp\Exception\GuzzleException;
-// use GuzzleHttp\Exception\InvalidArgumentException;
-// use GuzzleHttp\Promise as P;
-// use GuzzleHttp\Promise\PromiseInterface;
-// use Psr\Http\Message\RequestInterface;
-// use Psr\Http\Message\ResponseInterface;
-// use Psr\Http\Message\UriInterface;
-
 /**
  * @final
  */
@@ -23,4 +14,29 @@ class JsonRpc
 
         return $array;
     }
+
+
+
+    const JSON_RPC_VERSION = '2.0';
+
+
+    
+    public static function success($result, string $id = null)
+    {
+        return [
+            'jsonrpc' => self::JSON_RPC_VERSION,
+            'result'  => $result,
+            'id'      => $id,
+        ];
+    }
+
+    public static function error($error)
+    {
+        return [
+            'jsonrpc' => self::JSON_RPC_VERSION,
+            'error'  => $error,
+            'id'      => null,
+        ];
+    }
+
 }
