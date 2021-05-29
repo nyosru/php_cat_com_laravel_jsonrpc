@@ -1,0 +1,32 @@
+{
+    "name": "php_cat_com/laravel_jsonrpc",
+    "description": "модуль для laravel 8 чтобы работать с помощью JsonRPC 2.0",
+
+    "version": "0.1.0",
+
+    "keywords": [
+        "laravel", "module", "jsonrpc" , "php-cat.com"
+    ],
+
+    "authors": [
+        {
+            "name": "Sergey Baklanov",
+            "email": "1@php-cat.com",
+            "homepage": "https://php-cat.com",
+            "role": "Developer"
+        }
+    ],
+    
+    "homepage": "https://php-cat.com/develop/#classes",
+    "license": "MIT",
+
+    "require": {
+        "php": ">=7.2.0" 
+    },
+
+    "autoload": {
+        "psr-4": {
+            "php_cat_com\\": "src/"
+        }
+    }
+}

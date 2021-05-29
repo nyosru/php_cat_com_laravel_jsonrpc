@@ -1,2 +1,2 @@
-# php_cat_com_laravel_jsonrpc
- laravel модуль для работы с JsonRPC
+# php-cat-com-laravel-jsonrpc
+ функции для работы с json-rpc в ларавели
